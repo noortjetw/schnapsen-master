@@ -81,7 +81,7 @@ def maximizing(state):
     """
     return state.whose_turn() == 1
 
-
+# testing gitlab
 def heuristic(state):
     # type: (State) -> Tuple[Union[float, Any], None]
     """
