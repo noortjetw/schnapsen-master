@@ -46,10 +46,10 @@ PJ19 = Boolean('pj19')
 def general_information(kb):
     # GENERAL INFORMATION ABOUT THE CARDS
     # This adds information which cards are Jacks
-    kb.add_clause(J4)
-    kb.add_clause(J9)
-    kb.add_clause(J14)
-    kb.add_clause(J19)
+    kb.add_clause(J1)
+    kb.add_clause(J6)
+    kb.add_clause(J11)
+    kb.add_clause(J16)
     # Add here whatever is needed for your strategy.
 
 def strategy_knowledge(kb):
@@ -57,11 +57,11 @@ def strategy_knowledge(kb):
     # Add clauses (This list is sufficient for this strategy)
     # PJ is the strategy to play jacks first, so all we need to model is all x PJ(x) <-> J(x),
     # In other words that the PJ strategy should play a card when it is a jack
-    kb.add_clause(~J4, PJ4)
-    kb.add_clause(~J9, PJ9)
-    kb.add_clause(~J14, PJ14)
-    kb.add_clause(~J19, PJ19)
-    kb.add_clause(~PJ4, J4)
-    kb.add_clause(~PJ9, J9)
-    kb.add_clause(~PJ14, J14)
-    kb.add_clause(~PJ19, J19)
+    kb.add_clause(~J1, PJ1)
+    kb.add_clause(~J6, PJ6)
+    kb.add_clause(~J11, PJ11)
+    kb.add_clause(~J16, PJ16)
+    kb.add_clause(~PJ1, J1)
+    kb.add_clause(~PJ6, J6)
+    kb.add_clause(~PJ11, J11)
+    kb.add_clause(~PJ16, J16)
