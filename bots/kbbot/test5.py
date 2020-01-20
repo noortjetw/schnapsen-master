@@ -60,7 +60,7 @@ kb.add_clause(J0)
 kb.add_clause(J5)
 kb.add_clause(J10)
 kb.add_clause(J15)
-# DEFINITION OF THE STRATEGY
+# DEFINITION OF THE STRATEGYcb
 # Add clauses (This list is sufficient for this strategy)
 # PJ is the strategy to play jacks first, so all we need to model is all x PJ(x) <-> J(x),
 # In other words that the PJ strategy should play a card when it is a jack
